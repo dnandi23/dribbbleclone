@@ -4,7 +4,7 @@
 
 /* Custom font declaration */
 @font-face {
-    font-family: 'Source-Serif';
+    font-family: 'SourceSerif';
     /* src: url('./fonts/Source-Serif.ttf') format('truetype'); */
     /* src: url('/fonts/Source-Serif.ttf') format('truetype'); */
     src: url('../fonts/Source-Serif.ttf') format('truetype');
@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: 'Mona-Sans';
+    font-family: 'MonaSans';
     src: url('/fonts/Mona-Sans.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;

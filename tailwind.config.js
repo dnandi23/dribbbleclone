@@ -9,8 +9,8 @@ module.exports = {
         sectioncolor: "#FFDA7A",
       },
       fontFamily : {
-        SourceSerif: ['Source-Serif','sans-serif'],
-        MonaSans: ['Mona-Sans', 'sans-serif'],
+        SourceSerif: ['SourceSerif','sans-serif'],
+        MonaSans: ['MonaSans', 'sans-serif'],
       },
       letterSpacing: {
         'wide': '0.04em',     // 0.1em ka custom letter spacing
