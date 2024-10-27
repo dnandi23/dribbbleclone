@@ -611,6 +611,10 @@ a:focus {
   position: relative;
 }
 
+.bottom-12 {
+  bottom: 3rem;
+}
+
 .bottom-\[-7rem\] {
   bottom: -7rem;
 }
@@ -625,14 +629,6 @@ a:focus {
 
 .top-20 {
   top: 5rem;
-}
-
-.top-\[47\%\] {
-  top: 47%;
-}
-
-.bottom-12 {
-  bottom: 3rem;
 }
 
 .z-10 {
@@ -741,6 +737,11 @@ a:focus {
   width: 2.25rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -749,13 +750,12 @@ a:focus {
   width: 100vw;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .max-w-96 {
   max-width: 24rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .translate-x-\[-200\%\] {
@@ -803,6 +803,14 @@ a:focus {
   gap: 2rem;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
 .gap-y-10 {
   row-gap: 2.5rem;
 }
@@ -813,6 +821,16 @@ a:focus {
 
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .overflow-hidden {
@@ -835,10 +853,6 @@ a:focus {
   border-radius: 0.5rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -855,8 +869,9 @@ a:focus {
   border-top-width: 1px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-slate-200 {
@@ -869,9 +884,9 @@ a:focus {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+.bg-\[\#FFDA79\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 218 121 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -979,12 +994,54 @@ a:focus {
   padding-bottom: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
 .pb-64 {
   padding-bottom: 16rem;
 }
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-56 {
+  padding-bottom: 14rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-52 {
+  padding-bottom: 13rem;
+}
+
+.pb-48 {
+  padding-bottom: 12rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -999,14 +1056,9 @@ a:focus {
   font-family: SourceSerif, sans-serif;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -1029,14 +1081,14 @@ a:focus {
   line-height: 1rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-light {
@@ -1051,6 +1103,10 @@ a:focus {
   font-weight: 600;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .tracking-wide {
   letter-spacing: 0.04em;
 }
@@ -1058,6 +1114,15 @@ a:focus {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .shadow-md {
@@ -1257,6 +1322,21 @@ input{
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
+.hover\:text-slate-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:bottom-\[-11rem\] {
     bottom: -11rem;
@@ -1286,8 +1366,16 @@ input{
     width: 18rem;
   }
 
+  .md\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .md\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .md\:max-w-96 {
+    max-width: 24rem;
   }
 
   .md\:grid-cols-4 {
@@ -1296,6 +1384,11 @@ input{
 
   .md\:grid-rows-7 {
     grid-template-rows: repeat(7, minmax(0, 1fr));
+  }
+
+  .md\:gap-x-3 {
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
   }
 
   .md\:text-5xl {
@@ -1313,13 +1406,13 @@ input{
     line-height: 1.5rem;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
