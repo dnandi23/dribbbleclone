@@ -1,6 +1,7 @@
 {
-  "name": "tailwind-cli",
+  "name": "tailwind-starter-file",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build":"tailwindcss -i ./input.css -o ./css/style.css",
@@ -9,8 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "tailwindcss": "^3.4.12"
+    "tailwindcss": "^3.4.7"
   }
 }

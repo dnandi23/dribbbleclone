@@ -5,17 +5,14 @@
 /* Custom font declaration */
 @font-face {
     font-family: 'SourceSerif';
-    /* src: url('./fonts/Source-Serif.ttf') format('truetype'); */
-    /* src: url('/fonts/Source-Serif.ttf') format('truetype'); */
     src: url('../fonts/Source-Serif.ttf') format('truetype');
-    /* src: url('/fonts/Source-Serif.ttf') format('truetype'); */
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MonaSans';
-    src: url('/fonts/Mona-Sans.ttf') format('truetype');
+    src: url('../fonts/Mona-Sans.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -136,4 +133,72 @@ input{
 }
 .grid-items img:hover + div {
     opacity: 1;
+}
+/* Lower carosel */
+.marquee-wrapper2 {
+    display: inline-block;
+    animation: 55s marquee infinite linear;
+}
+.transition-container{
+    border-radius: 0.25rem; 
+}
+/* .marquee-wrapper2:hover{
+    animation-play-state: paused; 
+} */
+/* Inner div to simulate the foreground */
+.foreground {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 3px white;
+    border-radius: 0.25rem;
+    z-index: 1; /* Ensure it appears above the background pseudo-element */
+}
+.foreground img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+.transition-container::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -5px;
+    right: -5px;
+    background-color: #F4F7FE;
+    border-radius: 0.25rem;
+    z-index: 0; /* Lower z-index to appear behind */
+    transition: all 0.3s ease;  
+}
+/* Pseudo-element Transition for before*/
+.transition-container:hover::before{
+    top: -10px;
+    right: -10px;
+}
+/* Pseudo-element as background behind the container */
+.transition-container::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -10px;
+    right: -10px;
+    background-color: #F6D9FB;
+    border-radius: 0.25rem;
+    z-index: -1; /* Lower z-index to appear behind */
+    transition: all 0.3s ease;
+}
+/* Pseudo-element Transition for after*/
+.transition-container:hover::after{
+    top: -20px;
+    right: -20px;
+}
+/* Footer text design*/
+.footera{
+    @apply text-sm font-semibold
+}
+.footerp{
+    @apply text-sm cursor-pointer duration-150 hover:text-purple-400
 }
